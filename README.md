@@ -26,6 +26,7 @@ The following **additional** features are implemented:
 ## Planned Updates
 - Implement integration with [google vision API](https://cloud.google.com/vision/docs/celebrity-recognition)
 - All posts must have an 80% resemblance to [Nicki Minaj](https://en.wikipedia.org/wiki/Nicki_Minaj), or post submission will fail.
+- Rebrand as [Barbztagram](https://nickiminaj.fandom.com/wiki/Barbz)
 
 
 ## Video Walkthrough
