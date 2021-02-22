@@ -1,4 +1,4 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *InstaParse*
 
 **InstaParse** is a photo sharing app similar to Instagram but using Parse as its backend.
 
@@ -22,6 +22,11 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Some great captions for the photos!
+
+## Planned Updates
+- Implement integration with google vision API
+- All posts must have an 80% resemblance to [Nicki Minaj](https://en.wikipedia.org/wiki/Nicki_Minaj), or post submission will fail.
+
 
 ## Video Walkthrough
 
