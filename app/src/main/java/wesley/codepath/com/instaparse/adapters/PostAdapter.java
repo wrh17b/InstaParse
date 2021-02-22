@@ -75,8 +75,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
                         Log.e(TAG, "Error getting file", e);
                         return;
                     }
-                    Bitmap image = BitmapFactory.decodeFile(file.getAbsolutePath());
-                    ivPostPic.setImageBitmap(image);
+
+                    Glide.with(context)
+                            .load(file.getAbsolutePath())
+                            .into(ivPostPic);
+                    //Bitmap image = BitmapFactory.decodeFile(file.getAbsolutePath());
+                    //ivPostPic.setImageBitmap(image);
                 }
             });
         }
