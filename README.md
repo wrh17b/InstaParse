@@ -24,7 +24,7 @@ The following **additional** features are implemented:
 - [x] Some great captions for the photos!
 
 ## Planned Updates
-- Implement integration with google vision API
+- Implement integration with [google vision API](https://cloud.google.com/vision/docs/celebrity-recognition)
 - All posts must have an 80% resemblance to [Nicki Minaj](https://en.wikipedia.org/wiki/Nicki_Minaj), or post submission will fail.
 
 
