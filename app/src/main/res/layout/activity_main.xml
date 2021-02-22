@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btTakePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSubmit"
+        android:layout_marginTop="16dp"
+        android:text="Take Picture" />
+
+    <ImageButton
+        android:id="@+id/ivPic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btTakePic"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPic"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/colorBackground"
+        app:counterEnabled="true"
+        app:counterMaxLength="280">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Add a caption..."
+            android:inputType="textMultiLine|text"
+            tools:text="LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG POST" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivPic"
+        android:layout_alignBottom="@+id/ivPic"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:indeterminate="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>
