@@ -30,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         //Checking to see if user already logged in
         if(ParseUser.getCurrentUser()!=null){
             //goMainActivity();
-            goTimelineActivity();
+            goMainActivity();
             finish();
         }
 
@@ -125,7 +125,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 //Navigate to main activity:
                 //goMainActivity();
-                goTimelineActivity();
+                goMainActivity();
                 Toast.makeText(LoginActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                 //Finishing the activity to remove from back stack
                 finish();
@@ -140,8 +140,4 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    private void goTimelineActivity() {
-        Intent i = new Intent(this,TimelineActivity.class);
-        startActivity(i);
-    }
 }

@@ -67,22 +67,19 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         public void bind(Post post) {
             tvAuthor.setText(post.getUser().getUsername());
             tvPostCaption.setText(post.getCaption());
-
-            post.getImage().getFileInBackground(new GetFileCallback() {
-                @Override
-                public void done(File file, ParseException e) {
-                    if(e!=null){
-                        Log.e(TAG, "Error getting file", e);
-                        return;
-                    }
-
-                    Glide.with(context)
-                            .load(file.getAbsolutePath())
-                            .into(ivPostPic);
-                    //Bitmap image = BitmapFactory.decodeFile(file.getAbsolutePath());
-                    //ivPostPic.setImageBitmap(image);
-                }
-            });
+            Glide.with(context)
+                    .load(post.getImage().getUrl())
+                    .into(ivPostPic);
         }
     }
+
+    public void clear(){
+        posts.clear();
+        notifyDataSetChanged();
+    }
+    public void addAll(List<Post> newposts){
+        posts.addAll(newposts);
+        notifyDataSetChanged();
+    }
+
 }

@@ -3,11 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/itHome"
-        android:icon="?attr/homeAsUpIndicator"
-        android:title="Home"
-        app:showAsAction="ifRoom" />
-    <item
         android:id="@+id/itLogout"
         android:title="Logout"
         app:showAsAction="ifRoom" />
